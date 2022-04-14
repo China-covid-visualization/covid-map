@@ -76,7 +76,10 @@
         option = {
             title: {
                 text: 'China Covid Map',
-                left: 'center'
+                left: 'center',
+                textStyle: {
+                    fontSize: 30,
+                },
             },
             tooltip: {
                 trigger: 'item'
@@ -122,10 +125,6 @@
                     type: 'map',
                     mapType: 'china',
                     roam: false,
-                    label: {
-                        show: true,
-                        color: 'rgb(249, 249, 249)'
-                    },
                     data: [],
                 }
             ]
@@ -169,7 +168,9 @@
                                     roam: false,
                                     label: {
                                         show: true,
-                                        color: 'rgb(249, 249, 249)'
+                                        color: 'black',
+                                        // fontWeight: 'bold',
+                                        // fontSize: 14,
                                     },
                                     data: newArr,
                                     nameMap: Object.fromEntries(mp),
